@@ -15,11 +15,12 @@
 
 **Purpose**: Install Hugo theme and verify local development environment
 
-- [ ] T001 Install Hugo (if not already installed): `brew install hugo` (macOS) or `sudo apt install hugo` (Linux) or download from https://gohugo.io/installation/
-- [ ] T002 Verify Hugo installation: `hugo version` (should show v0.121.0 or later with Extended)
-- [ ] T003 Initialize git submodule for hugo-profile theme: `git submodule add https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile`
-- [ ] T004 Update git submodule: `git submodule update --init --recursive`
+ - [ ] T001 Install Hugo (Arch Linux): `sudo pacman -Syu && sudo pacman -S hugo`
+ - [ ] T002 Verify Hugo installation (Extended): `hugo version` (look for `extended` in the version output; target v0.121.0 or later)
+ - [X] T003 Initialize git submodule for hugo-profile theme: `git submodule add https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile`
+ - [X] T004 Update git submodule: `git submodule update --init --recursive`
 - [ ] T005 Test local Hugo server: `hugo server -D` and verify site loads at http://localhost:1313
+ - [X] T005 Test local Hugo server: `hugo server -D` and verify site loads at http://localhost:1313
 
 **Checkpoint**: Hugo theme installed, local server running successfully
 
@@ -30,7 +31,7 @@
 **Purpose**: Personalize site content with your professional information
 
 - [ ] T006 Update email address in hugo.toml at params.contact.email (line ~138)
-- [ ] T007 [P] Update GitHub URL in hugo.toml at params.footer.socialNetworks.icons (line ~143) to https://github.com/renbrent
+ - [X] T007 [P] Update GitHub URL in hugo.toml at params.footer.socialNetworks.icons (line ~143) to https://github.com/renbrent
 - [ ] T008 [P] Update LinkedIn URL in hugo.toml at params.footer.socialNetworks.icons (line ~146) with your LinkedIn profile
 - [ ] T009 [P] Update Twitter/X URL in hugo.toml at params.footer.socialNetworks.icons (line ~149) or remove if not applicable
 - [ ] T010 Customize hero content in hugo.toml at params.hero.content (line ~30) with your professional summary
@@ -115,16 +116,16 @@
 
 **Purpose**: Prepare repository and configure GitHub Pages
 
-- [ ] T056 Review changes: `git status` to see all modified and new files
-- [ ] T057 Stage Hugo configuration: `git add hugo.toml`
-- [ ] T058 Stage GitHub Actions workflow: `git add .github/workflows/deploy.yml`
-- [ ] T059 Stage static assets: `git add static/`
-- [ ] T060 Stage archetypes: `git add archetypes/`
-- [ ] T061 Stage README and gitignore: `git add README.md .gitignore`
-- [ ] T062 Stage theme submodule: `git add .gitmodules themes/`
-- [ ] T063 Verify public/ directory is NOT staged (should be in .gitignore): `git status | grep public/` should return nothing
-- [ ] T064 Commit initial portfolio site: `git commit -m "feat: initial Hugo portfolio site with hugo-profile theme"`
-- [ ] T065 Push to GitHub: `git push origin main`
+ - [X] T056 Review changes: `git status` to see all modified and new files
+ - [X] T057 Stage Hugo configuration: `git add hugo.toml`
+ - [X] T058 Stage GitHub Actions workflow: `git add .github/workflows/deploy.yml`
+ - [X] T059 Stage static assets: `git add static/`
+ - [X] T060 Stage archetypes: `git add archetypes/`
+ - [X] T061 Stage README and gitignore: `git add README.md .gitignore`
+ - [X] T062 Stage theme submodule: `git add .gitmodules themes/`
+ - [ ] T063 Verify public/ directory is NOT staged (should be in .gitignore): `git status | grep public/` should return nothing
+ - [X] T064 Commit initial portfolio site: `git commit -m "feat: initial Hugo portfolio site with hugo-profile theme"`
+ - [ ] T065 Push to GitHub: `git remote add origin https://github.com/renbrent/renbrent.github.io.git` then `git push -u origin master`
 - [ ] T066 Go to GitHub repository Settings > Pages
 - [ ] T067 Set Pages source to "GitHub Actions" (not branch)
 - [ ] T068 Wait for GitHub Actions workflow to complete (check Actions tab)
