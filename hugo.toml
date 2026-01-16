@@ -1,0 +1,184 @@
+baseURL = 'https://renbrent.github.io/'
+languageCode = 'en-us'
+title = 'Brent Basiano - Portfolio'
+theme = 'hugo-profile'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  title = "Brent Basiano"
+  description = "Software Engineer Portfolio"
+  favicon = "/images/favicon.ico"
+  
+  # Hero Section
+  [params.hero]
+    enable = true
+    intro = "Hi, my name is"
+    title = "Brent Basiano"
+    subtitle = "Software Engineer & Developer"
+    content = "Passionate about building scalable applications and solving complex technical challenges. Experienced in full-stack development with a focus on clean code and user experience."
+    image = "/images/profile.jpg"
+    
+    [[params.hero.button]]
+      enable = true
+      name = "Resume"
+      url = "/files/resume.pdf"
+      download = true
+      newPage = false
+    
+    [[params.hero.button]]
+      enable = true
+      name = "Projects"
+      url = "#projects"
+      download = false
+      newPage = false
+
+  # About Section
+  [params.about]
+    enable = true
+    title = "About Me"
+    image = "/images/profile.jpg"
+    content = """
+I'm a software engineer with expertise in building modern web applications. 
+My experience spans full-stack development, with particular strength in JavaScript/TypeScript, 
+Python, and cloud technologies. I'm passionate about writing clean, maintainable code and 
+creating exceptional user experiences.
+"""
+    
+    [params.about.skills]
+      enable = true
+      title = "Technical Skills"
+      items = [
+        "JavaScript/TypeScript",
+        "Python",
+        "React",
+        "Node.js",
+        "Git & GitHub",
+        "HTML/CSS",
+        "SQL/NoSQL Databases",
+        "Cloud Platforms (AWS/GCP/Azure)"
+      ]
+
+  # Experience Section
+  [params.experience]
+    enable = true
+    title = "Experience"
+    
+    [[params.experience.items]]
+      job = "Software Engineer"
+      company = "Company Name"
+      companyUrl = "https://example.com"
+      date = "Jan 2024 - Present"
+      content = """
+- Developed and maintained full-stack applications using modern frameworks
+- Implemented scalable solutions serving thousands of users
+- Collaborated with cross-functional teams in agile environment
+- Optimized application performance resulting in 40% faster load times
+"""
+    
+    [[params.experience.items]]
+      job = "Junior Developer"
+      company = "Previous Company"
+      companyUrl = "https://example.com"
+      date = "Jun 2022 - Dec 2023"
+      content = """
+- Built responsive web applications using React and Node.js
+- Participated in code reviews and contributed to team best practices
+- Fixed bugs and implemented new features based on user feedback
+"""
+
+  # Education Section
+  [params.education]
+    enable = true
+    title = "Education"
+    
+    [[params.education.items]]
+      title = "Bachelor of Science in Computer Science"
+      school = "University Name"
+      date = "2018 - 2022"
+      content = """
+- GPA: 3.8/4.0
+- Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems
+- Dean's List (4 semesters)
+"""
+
+  # Projects Section
+  [params.projects]
+    enable = true
+    title = "Projects"
+    
+    [[params.projects.items]]
+      title = "E-Commerce Platform"
+      content = "Full-stack e-commerce application with cart, payment processing, and admin dashboard. Built with React, Node.js, Express, and MongoDB."
+      image = "/images/projects/ecommerce.jpg"
+      badges = ["React", "Node.js", "MongoDB", "Stripe"]
+      
+      [[params.projects.items.links]]
+        icon = "fab fa-github"
+        url = "https://github.com/renbrent/project"
+      
+      [[params.projects.items.links]]
+        icon = "fas fa-external-link-alt"
+        url = "https://demo.example.com"
+    
+    [[params.projects.items]]
+      title = "Task Management App"
+      content = "Collaborative task management application with real-time updates. Features include drag-and-drop, team collaboration, and deadline tracking."
+      image = "/images/projects/taskapp.jpg"
+      badges = ["TypeScript", "React", "Firebase", "Material-UI"]
+      
+      [[params.projects.items.links]]
+        icon = "fab fa-github"
+        url = "https://github.com/renbrent/task-app"
+    
+    [[params.projects.items]]
+      title = "Weather Dashboard"
+      content = "Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts. Integrates with OpenWeather API."
+      image = "/images/projects/weather.jpg"
+      badges = ["JavaScript", "API Integration", "Charts.js", "CSS"]
+      
+      [[params.projects.items.links]]
+        icon = "fab fa-github"
+        url = "https://github.com/renbrent/weather-dashboard"
+      
+      [[params.projects.items.links]]
+        icon = "fas fa-external-link-alt"
+        url = "https://weather.example.com"
+
+  # Contact Section
+  [params.contact]
+    enable = true
+    title = "Contact"
+    content = "I'm currently open to new opportunities. Feel free to reach out!"
+    email = "your.email@example.com"
+    btnName = "Email Me"
+
+  # Footer
+  [params.footer]
+    [params.footer.socialNetworks]
+      [[params.footer.socialNetworks.icons]]
+        name = "github"
+        url = "https://github.com/renbrent"
+      
+      [[params.footer.socialNetworks.icons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/yourprofile"
+      
+      [[params.footer.socialNetworks.icons]]
+        name = "twitter"
+        url = "https://twitter.com/yourhandle"
+
+  # List pages (blog, projects)
+  [params.listPages]
+    disableFeaturedImage = false
+
+  # Analytics (optional - uncomment and configure)
+  # [params.analytics]
+  #   [params.analytics.google]
+  #     id = "G-XXXXXXXXXX"
