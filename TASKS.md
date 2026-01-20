@@ -30,10 +30,10 @@
 
 **Purpose**: Personalize site content with your professional information
 
-- [ ] T006 Update email address in hugo.toml at params.contact.email (line ~138)
+- [X] T006 Update email address in hugo.toml at params.contact.email (line ~138)
  - [X] T007 [P] Update GitHub URL in hugo.toml at params.footer.socialNetworks.icons (line ~143) to https://github.com/renbrent
-- [ ] T008 [P] Update LinkedIn URL in hugo.toml at params.footer.socialNetworks.icons (line ~146) with your LinkedIn profile
-- [ ] T009 [P] Update Twitter/X URL in hugo.toml at params.footer.socialNetworks.icons (line ~149) or remove if not applicable
+- [X] T008 [P] Update LinkedIn URL in hugo.toml at params.footer.socialNetworks.icons (line ~146) with your LinkedIn profile
+- [X] T009 [P] Update Twitter/X URL in hugo.toml at params.footer.socialNetworks.icons (line ~149) or remove if not applicable
 - [ ] T010 Customize hero content in hugo.toml at params.hero.content (line ~30) with your professional summary
 - [ ] T011 Update about section in hugo.toml at params.about.content (line ~47) with your background and expertise
 - [ ] T012 [P] Update skills list in hugo.toml at params.about.skills.items (line ~53) with your actual technical skills

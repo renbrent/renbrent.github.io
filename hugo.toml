@@ -151,7 +151,7 @@ creating exceptional user experiences.
     enable = true
     title = "Contact"
     content = "I'm currently open to new opportunities. Feel free to reach out!"
-    email = "your.email@example.com"
+    email = "brentarnold.basiano@gmail.com"
     btnName = "Email Me"
 
   # Footer
@@ -163,11 +163,11 @@ creating exceptional user experiences.
       
       [[params.footer.socialNetworks.icons]]
         name = "linkedin"
-        url = "https://linkedin.com/in/yourprofile"
+        url = "https://linkedin.com/in/brentbasiano"
       
       [[params.footer.socialNetworks.icons]]
-        name = "twitter"
-        url = "https://twitter.com/yourhandle"
+        name = "envelope"
+        url = "mailto:brentarnold.basiano@gmail.com"
 
   # List pages (blog, projects)
   [params.listPages]
