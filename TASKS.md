@@ -15,11 +15,10 @@
 
 **Purpose**: Install Hugo theme and verify local development environment
 
- - [ ] T001 Install Hugo (Arch Linux): `sudo pacman -Syu && sudo pacman -S hugo`
- - [ ] T002 Verify Hugo installation (Extended): `hugo version` (look for `extended` in the version output; target v0.121.0 or later)
+ - [X] T001 Install Hugo (Arch Linux): `sudo pacman -Syu && sudo pacman -S hugo`
+ - [X] T002 Verify Hugo installation (Extended): `hugo version` (look for `extended` in the version output; target v0.121.0 or later)
  - [X] T003 Initialize git submodule for hugo-profile theme: `git submodule add https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile`
  - [X] T004 Update git submodule: `git submodule update --init --recursive`
-- [ ] T005 Test local Hugo server: `hugo server -D` and verify site loads at http://localhost:1313
  - [X] T005 Test local Hugo server: `hugo server -D` and verify site loads at http://localhost:1313
 
 **Checkpoint**: Hugo theme installed, local server running successfully
