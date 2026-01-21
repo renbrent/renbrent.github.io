@@ -21,8 +21,8 @@ theme = 'hugo-profile'
     enable = true
     intro = "Hi, my name is"
     title = "Brent Basiano"
-    subtitle = "Software Engineer & Developer"
-    content = "Passionate about building scalable applications and solving complex technical challenges. Experienced in full-stack development with a focus on clean code and user experience."
+    subtitle = "Systems Design Engineer at AMD"
+    content = "Infrastructure and software engineer with expertise in building scalable system management platforms. Experienced in full-stack development using Python, FastAPI, MongoDB, and Grafana, with a focus on real-time monitoring and automation."
     image = "/images/profile.jpg"
     
     [params.hero.button]
@@ -38,24 +38,25 @@ theme = 'hugo-profile'
     title = "About Me"
     image = "/images/profile.jpg"
     content = """
-I'm a software engineer with expertise in building modern web applications. 
-My experience spans full-stack development, with particular strength in JavaScript/TypeScript, 
-Python, and cloud technologies. I'm passionate about writing clean, maintainable code and 
-creating exceptional user experiences.
+I'm a Systems Design Engineer at AMD with a Master's in Computer Engineering from Texas A&M University.
+I specialize in building scalable infrastructure platforms and real-time monitoring systems.
+My experience spans full-stack development, DevOps automation, and distributed systems,
+with particular expertise in Python, FastAPI, MongoDB, and containerization technologies.
+I'm passionate about designing reliable systems that serve global operations.
 """
     
     [params.about.skills]
       enable = true
       title = "Technical Skills"
       items = [
-        "JavaScript/TypeScript",
         "Python",
-        "React",
-        "Node.js",
-        "Git & GitHub",
-        "HTML/CSS",
-        "SQL/NoSQL Databases",
-        "Cloud Platforms (AWS/GCP/Azure)"
+        "Go",
+        "FastAPI / Flask",
+        "MongoDB",
+        "Docker / Ansible",
+        "Grafana / Prometheus",
+        "React / JavaScript",
+        "Jenkins / GitHub Actions"
       ]
 
   # Experience Section
@@ -64,26 +65,49 @@ creating exceptional user experiences.
     title = "Experience"
     
     [[params.experience.items]]
-      job = "Software Engineer"
-      company = "Company Name"
-      companyUrl = "https://example.com"
+      job = "Systems Design Engineer 2"
+      company = "AMD"
+      companyUrl = "https://www.amd.com"
       date = "Jan 2024 - Present"
       content = """
-- Developed and maintained full-stack applications using modern frameworks
-- Implemented scalable solutions serving thousands of users
-- Collaborated with cross-functional teams in agile environment
-- Optimized application performance resulting in 40% faster load times
+- Lead the ongoing development and enhancement of the System Management Platform to support global infrastructure operations
+- Architected and deployed a utilization monitoring system leveraging Grafana, FastAPI, and MongoDB, providing real-time insights for over 500 FPGA boards across global sites
+- Partnered with emulation and prototyping teams to design and implement a credit management system using FastAPI, Semaphore/Ansible, MongoDB, RabbitMQ, and Grafana
+- Enhanced authentication and access control by integrating JWT-based security and LDAP authentication
 """
     
     [[params.experience.items]]
-      job = "Junior Developer"
-      company = "Previous Company"
-      companyUrl = "https://example.com"
-      date = "Jun 2022 - Dec 2023"
+      job = "Systems Design Engineer (Intern)"
+      company = "AMD"
+      companyUrl = "https://www.amd.com"
+      date = "Jan 2023 - Aug 2023"
       content = """
-- Built responsive web applications using React and Node.js
-- Participated in code reviews and contributed to team best practices
-- Fixed bugs and implemented new features based on user feedback
+- Architected the foundation for a system management platform using Python and Flask, creating a REST API service with MongoDB
+- Created the application server by deploying the app through Docker containers for scalability and isolation
+- Configured Gunicorn and Nginx to handle HTTP service routing and load balancing for high availability
+- Implemented unit testing and automated CI/CD pipelines with Pytest and Jenkins
+- Successfully created an application capable of accommodating up to 500 internal users across global operations
+"""
+    
+    [[params.experience.items]]
+      job = "Software Engineer (Intern)"
+      company = "NXP Semiconductors"
+      companyUrl = "https://www.nxp.com"
+      date = "May 2022 - Aug 2022"
+      content = """
+- Leveraged Agile methodologies to create new file readers and upgraded data visualization techniques using Java Swing
+- Developed Python and Bash scripts to automate failure analysis projects, resulting in significant time savings
+- Resulted in all 7 failure analysis labs globally adopting new features in their software tools
+"""
+    
+    [[params.experience.items]]
+      job = "Student Assistant"
+      company = "Texas A&M University"
+      companyUrl = "https://www.tamu.edu"
+      date = "Oct 2021 - Dec 2023"
+      content = """
+- Developed Python programming assignments exploring concepts in differential equations for 3 professors
+- Utilized Jupyter Notebooks to plot differential equation solutions with Matplotlib and NumPy
 """
 
   # Education Section
@@ -92,15 +116,26 @@ creating exceptional user experiences.
     title = "Education"
     
     [[params.education.items]]
-      title = "Bachelor of Science in Computer Science"
-      date = "2018 - 2022"
+      title = "Master of Science in Computer Engineering"
+      date = "Aug 2021 - Dec 2023"
       [params.education.items.school]
-        name = "University Name"
-        url = "https://example.com"
+        name = "Texas A&M University"
+        url = "https://www.tamu.edu"
       content = """
-- GPA: 3.8/4.0
-- Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems
-- Dean's List (4 semesters)
+- GPA: 3.85/4.00
+- College Station, Texas
+"""
+    
+    [[params.education.items]]
+      title = "Bachelor of Science in Engineering"
+      date = "Sep 2014 - May 2018"
+      [params.education.items.school]
+        name = "Pensacola Christian College"
+        url = "https://www.pcci.edu"
+      content = """
+- GPA: 4.0/4.0 (President's List)
+- Concentration: Electrical Engineering; Minor: Mathematics
+- Pensacola, Florida
 """
 
   # Projects Section
@@ -109,42 +144,34 @@ creating exceptional user experiences.
     title = "Projects"
     
     [[params.projects.items]]
-      title = "E-Commerce Platform"
-      content = "Full-stack e-commerce application with cart, payment processing, and admin dashboard. Built with React, Node.js, Express, and MongoDB."
-      image = "/images/projects/ecommerce.jpg"
-      badges = ["React", "Node.js", "MongoDB", "Stripe"]
+      title = "System Management Platform"
+      content = "Enterprise platform for managing global infrastructure operations, featuring real-time monitoring, resource allocation, and automated workflows. Serves 500+ internal users across multiple global sites."
+      image = "/images/projects/smp.jpg"
+      badges = ["Python", "FastAPI", "MongoDB", "Docker"]
       
       [[params.projects.items.links]]
         icon = "fab fa-github"
-        url = "https://github.com/renbrent/project"
-      
-      [[params.projects.items.links]]
-        icon = "fas fa-external-link-alt"
-        url = "https://demo.example.com"
+        url = "https://github.com/renbrent"
     
     [[params.projects.items]]
-      title = "Task Management App"
-      content = "Collaborative task management application with real-time updates. Features include drag-and-drop, team collaboration, and deadline tracking."
-      image = "/images/projects/taskapp.jpg"
-      badges = ["TypeScript", "React", "Firebase", "Material-UI"]
+      title = "FPGA Utilization Monitor"
+      content = "Real-time monitoring dashboard providing insights for over 500 FPGA boards across global data centers. Built with Grafana for visualization and FastAPI for data aggregation."
+      image = "/images/projects/monitoring.jpg"
+      badges = ["Grafana", "FastAPI", "MongoDB", "Prometheus"]
       
       [[params.projects.items.links]]
         icon = "fab fa-github"
-        url = "https://github.com/renbrent/task-app"
+        url = "https://github.com/renbrent"
     
     [[params.projects.items]]
-      title = "Weather Dashboard"
-      content = "Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts. Integrates with OpenWeather API."
-      image = "/images/projects/weather.jpg"
-      badges = ["JavaScript", "API Integration", "Charts.js", "CSS"]
+      title = "Credit Management System"
+      content = "Automated credit management system for emulation/prototyping data centers. Features include resource allocation, queue management, and real-time reporting."
+      image = "/images/projects/credits.jpg"
+      badges = ["FastAPI", "RabbitMQ", "Ansible", "Grafana"]
       
       [[params.projects.items.links]]
         icon = "fab fa-github"
-        url = "https://github.com/renbrent/weather-dashboard"
-      
-      [[params.projects.items.links]]
-        icon = "fas fa-external-link-alt"
-        url = "https://weather.example.com"
+        url = "https://github.com/renbrent"
 
   # Contact Section
   [params.contact]

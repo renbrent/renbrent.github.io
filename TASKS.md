@@ -33,13 +33,13 @@
  - [X] T007 [P] Update GitHub URL in hugo.toml at params.footer.socialNetworks.icons (line ~143) to https://github.com/renbrent
 - [X] T008 [P] Update LinkedIn URL in hugo.toml at params.footer.socialNetworks.icons (line ~146) with your LinkedIn profile
 - [X] T009 [P] Update Twitter/X URL in hugo.toml at params.footer.socialNetworks.icons (line ~149) or remove if not applicable
-- [ ] T010 Customize hero content in hugo.toml at params.hero.content (line ~30) with your professional summary
-- [ ] T011 Update about section in hugo.toml at params.about.content (line ~47) with your background and expertise
-- [ ] T012 [P] Update skills list in hugo.toml at params.about.skills.items (line ~53) with your actual technical skills
-- [ ] T013 Update experience section in hugo.toml starting at params.experience.items (line ~68) with your actual work history
-- [ ] T014 Update education section in hugo.toml at params.education.items (line ~93) with your actual educational background
-- [ ] T015 Update projects section in hugo.toml starting at params.projects.items (line ~109) with your actual projects
-- [ ] T016 For each project in hugo.toml, update GitHub URLs and demo links with real repository links
+- [X] T010 Customize hero content in hugo.toml at params.hero.content (line ~30) with your professional summary
+- [X] T011 Update about section in hugo.toml at params.about.content (line ~47) with your background and expertise
+- [X] T012 [P] Update skills list in hugo.toml at params.about.skills.items (line ~53) with your actual technical skills
+- [X] T013 Update experience section in hugo.toml starting at params.experience.items (line ~68) with your actual work history
+- [X] T014 Update education section in hugo.toml at params.education.items (line ~93) with your actual educational background
+- [X] T015 Update projects section in hugo.toml starting at params.projects.items (line ~109) with your actual projects
+- [X] T016 For each project in hugo.toml, update GitHub URLs and demo links with real repository links
 
 **Checkpoint**: All placeholder content replaced with real professional information
 
@@ -52,7 +52,7 @@
 - [ ] T017 Prepare profile photo: resize to 400x400px, optimize to <200KB, save as WebP or JPG
 - [ ] T018 Add profile photo to static/images/profile.jpg
 - [ ] T019 Create or update favicon: create 32x32px icon and save to static/images/favicon.ico
-- [ ] T020 [P] Prepare resume PDF: ensure up-to-date, save to static/files/resume.pdf
+- [X] T020 [P] Prepare resume PDF: ensure up-to-date, save to static/files/resume.pdf
 - [ ] T021 [P] Prepare project screenshot for project 1: resize to 1200x630px, optimize to <200KB
 - [ ] T022 [P] Add project 1 screenshot to static/images/projects/ (name matching hugo.toml reference)
 - [ ] T023 [P] Prepare project screenshot for project 2: resize to 1200x630px, optimize to <200KB
