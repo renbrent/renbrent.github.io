@@ -2,11 +2,11 @@
 
 Professional portfolio site built with Hugo and deployed on GitHub Pages.
 
-## 🚀 Live Site
+## Live Site
 
 Visit: [https://renbrent.github.io](https://renbrent.github.io)
 
-## 📋 Features
+## Features
 
 - **Responsive Design**: Mobile-first approach, optimized for all devices
 - **Performance Optimized**: Lighthouse scores ≥90 across all categories
@@ -15,14 +15,14 @@ Visit: [https://renbrent.github.io](https://renbrent.github.io)
 - **Professional Resume**: Downloadable PDF and online version
 - **Contact Section**: Easy ways for recruiters to reach out
 
-## 🛠️ Built With
+## Built With
 
 - [Hugo](https://gohugo.io/) - Static site generator
 - [hugo-profile](https://github.com/gurusabarish/hugo-profile) - Portfolio theme
 - GitHub Pages - Hosting
 - GitHub Actions - CI/CD deployment
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 renbrent.github.io/
@@ -47,7 +47,7 @@ renbrent.github.io/
 └── README.md
 ```
 
-## 🚦 Local Development
+## Local Development
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ renbrent.github.io/
 3. Place static files (images, resume PDF) in the `static/` directory
 4. Test locally before committing
 
-## 📝 Customization Guide
+## Customization Guide
 
 ### Update Personal Information
 
@@ -119,7 +119,7 @@ Modify `params.experience.items` in [hugo.toml](hugo.toml) with your work histor
 1. Add your profile photo to `static/images/profile.jpg`
 2. Update the `image` paths in the configuration if using a different filename
 
-## 🚀 Deployment
+## Deployment
 
 The site automatically deploys to GitHub Pages when you push to the `main` branch.
 
@@ -137,7 +137,7 @@ To use a custom domain:
 2. Update `baseURL` in [hugo.toml](hugo.toml)
 3. Configure DNS with your domain provider
 
-## 📊 Performance Standards
+## Performance Standards
 
 This site follows strict performance requirements (see [.specify/memory/constitution.md](.specify/memory/constitution.md)):
 
@@ -145,11 +145,11 @@ This site follows strict performance requirements (see [.specify/memory/constitu
 - **Lighthouse Scores**: Performance ≥90, Accessibility ≥95, Best Practices ≥95, SEO ≥95
 - **Bundle Sizes**: JS <100KB, CSS <50KB (gzipped)
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal portfolio site. However, if you find bugs or have suggestions:
 1. Open an issue describing the problem
@@ -157,7 +157,7 @@ This is a personal portfolio site. However, if you find bugs or have suggestions
 3. Create a feature branch
 4. Submit a pull request
 
-## 📞 Contact
+## Contact
 
 - **Email**: your.email@example.com
 - **GitHub**: [@renbrent](https://github.com/renbrent)
@@ -165,4 +165,4 @@ This is a personal portfolio site. However, if you find bugs or have suggestions
 
 ---
 
-**Built with** ❤️ **using Hugo**
+**Built with Hugo**
